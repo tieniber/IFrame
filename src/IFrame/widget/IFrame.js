@@ -32,10 +32,15 @@ dojo.declare("IFrame.widget.IFrame", [ mxui.widget._WidgetBase, dijit._Templated
     scrolling : 'auto',
     prefix : '',
     templateString : dojo.cache('IFrame.widget', 'templates/IFrame.html'),
+	customID: null,
 
     update : function(obj, callback) {
         'use strict';
 
+		if (this.customID !== null) {
+			this.domNode.id = this.customID;
+		}
+		
         if(typeof obj === 'string'){
             this._contextGuid = obj;
             mx.data.get({
