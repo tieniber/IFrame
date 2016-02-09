@@ -37,8 +37,12 @@ dojo.declare("IFrame.widget.IFrame", [ mxui.widget._WidgetBase, dijit._Templated
     update : function(obj, callback) {
         'use strict';
 
-		if (this.customID !== null) {
-			this.domNode.id = this.customID;
+		if (this.customDivID !== null) {
+			this.domNode.id = this.customDivID;
+		}
+		
+		if (this.customIframeID !== null) {
+			this.iframe.id = this.customIframeID;
 		}
 		
         if(typeof obj === 'string'){

@@ -52,10 +52,15 @@ AAAASUVORK5CYII=</icon>
       <description>Optional URL prefix. The attribute value is prefixed with this value.</description>
     </property>
 	  
-	<property key="customID" type="string" defaultValue="" required="false">
-	  <caption>Custom ID</caption>
+	<property key="customDivID" type="string" defaultValue="" required="false">
+	  <caption>Custom Div ID</caption>
 	  <category>Appearance</category>
       <description>Optional ID of the iFrame div wrapper.</description>
-	</property>  
+	</property>
+	<property key="customIframeID" type="string" defaultValue="" required="false">
+	  <caption>Custom IFrame ID</caption>
+	  <category>Appearance</category>
+      <description>Optional ID of the IFrame .</description>
+	</property> 
   </properties>
 </widget>
